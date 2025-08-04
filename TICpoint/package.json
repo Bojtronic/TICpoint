@@ -7,7 +7,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build --configuration production",
-    "start": "ng serve",
+    "start": "npx http-server dist/TICpoint -p $PORT -c-1 --spa",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
