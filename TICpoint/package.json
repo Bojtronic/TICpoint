@@ -9,7 +9,10 @@
     "build": "ng build --configuration production",
     "start": "http-server dist/TICpoint/browser -p $PORT -c-1 --spa -i index.html --no-dir-listing",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev:ssr": "ng run TICpoint:serve-ssr",
+    "build:ssr": "ng build --configuration production && ng run TICpoint:server:production",
+    "serve:ssr": "node dist/TICpoint/server/main.js"
   },
   "prettier": {
     "overrides": [
